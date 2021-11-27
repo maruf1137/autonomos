@@ -1,0 +1,130 @@
+.industry-section {
+  .header {
+  }
+}
+
+.industry {
+  background: #f3f3f3;
+  padding: 10rem 0 7rem 0;
+  position: relative;
+
+  &::before{
+    background-image: linear-gradient(to right, rgba(243, 243, 243, 1), rgba(243, 243, 243, 0.2)); 
+    content: "";
+    display: block;
+    height: 100%;
+    width: 40%;
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    z-index: 2;
+  }
+
+  &::after{
+    background-image: linear-gradient(to left, rgba(243, 243, 243, 1), rgba(243, 243, 243, 0.2)); 
+    content: "";
+    display: block;
+    height: 100%;
+    width: 40%;
+    position: absolute;
+    top: 0rem;
+    right: 0rem;
+    z-index: 2;
+  }
+
+  .owl-carousel .owl-stage-outer {
+    overflow: visible;
+  }
+
+  .owl-carousel.owl-drag .owl-item {
+    // width: 250px;
+  }
+
+  .owl-carousel {
+    .owl-nav{
+
+      .owl-next.owl-prev{
+        background-color: #fff;
+        color: $color-primary;
+      }
+      
+      .owl-prev{
+        left: 20rem;
+        position: absolute;
+        top: 40%;
+        transform: translateY(-50%);
+        background-color: #fff;
+        color: $color-primary;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2.5rem;
+        z-index: 3;
+      }
+
+      .owl-next{
+        right: 20rem;
+        position: absolute;
+        top: 40%;
+        transform: translateY(-50%);
+        background-color: #fff;
+        color: $color-primary;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 3;
+        font-size: 2.5rem;
+      }
+    }
+  }
+
+  .owl-stage{
+    height: 36rem;
+  }
+
+  .item {
+    // border: 1px solid red;
+    text-align: center;
+
+    img {
+      height: 15rem;
+      width: auto;
+      margin: 0 auto;
+      object-fit: contain;
+      margin-bottom: 4rem;
+      opacity: 0.5;
+      transition: all .5s;
+    }
+
+    h2{
+      font-size: 3.2rem;
+      font-family: $font-primary;
+      font-style: italic;
+      display: none;
+      transition: all .5s;
+    }
+  }
+
+  .owl-item.active.center{
+    img{
+      opacity: 1;
+      transform: scale(1.5);
+    }
+    h2{
+      display: block;
+      position: absolute;
+      bottom: -12rem;
+      left: -31rem;
+      width: 80rem;
+      z-index: 3;
+    }
+  }
+}

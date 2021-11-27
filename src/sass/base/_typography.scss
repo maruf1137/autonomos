@@ -1,0 +1,108 @@
+.heading {
+  // font-family: $font-secondary;
+  // color: $color-heading;
+}
+
+h1.heading {
+  font-size: 9rem;
+  font-weight: 400;
+  font-family: $font-secondary;
+  color: $color-heading;
+
+  @media only screen and (max-width: $mbl-port) {
+    font-size: 6rem;
+  }
+  @media only screen and (max-width: $mbl-small) {
+    font-size: 4.5rem;
+  }
+}
+
+h2.heading {
+  font-size: 4.8rem;
+  font-weight: 400;
+  font-family: $font-secondary;
+  color: $color-heading;
+}
+
+h5.heading {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+h4.heading {
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+
+h6.heading {
+  font-size: 1.5rem;
+}
+
+.p__text {
+  font-size: 1.6rem;
+  color: $color-text;
+}
+
+// Typography utils
+
+.bold {
+  font-weight: bold;
+}
+
+.center {
+  text-align: center;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+.capitalize {
+  text-transform: capitalize;
+}
+
+.color-dark {
+  fill: $color-gray;
+  color: $color-gray;
+}
+
+@mixin pos-center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin img-size {
+  height: 100%;
+  width: 100%;
+}
+
+@mixin icon-vector {
+  height: 2rem;
+  width: 2rem;
+}
+
+@mixin overlay-content {
+  background-color: $color-black;
+  max-width: 55rem;
+  z-index: 501;
+  border-radius: 1rem;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  @media only screen and (max-width: $tab-port) {
+    width: 80%;
+  }
+}
+
+@mixin button-outline {
+  height: 115%;
+  width: 115%;
+  content: "";
+  display: block;
+  background-color: transparent;
+  border-radius: 50%;
+  position: absolute;
+  @include pos-center;
+}

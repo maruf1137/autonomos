@@ -1,0 +1,66 @@
+.header {
+  height: calc(100vh - 8rem);
+  width: 100%;
+  background-image: url("../img/bg-hero.jpg");
+  background-size: cover;
+  background-position: center right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  &__content {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    width: 60%;
+
+    @media only screen and (max-width: $laptop-land) {
+      width: 80%;
+    }
+    @media only screen and (max-width: $mbl-land) {
+      // width: 100%;
+      left: 0;
+      margin: 0 5rem;
+    }
+
+    h1 {
+      margin-bottom: 2rem;
+    }
+
+    .p-text {
+      color: $color-heading;
+      font-size: 2rem;
+    }
+
+    .btn {
+      margin-top: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0 1rem ;
+
+      .icon-shere {
+        height: 2rem;
+        width: 2rem;
+      }
+    }
+  }
+
+  &__image {
+    position: absolute;
+    top: 50%;
+    right: -5%;
+    transform: translateY(-50%);
+    height: 62rem;
+    width: 62rem;
+
+    img {
+      @include img-size;
+      @media only screen and (max-width: $laptop-land) {
+        display: none;
+      }
+    }
+  }
+}

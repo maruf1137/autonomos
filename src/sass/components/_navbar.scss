@@ -1,0 +1,119 @@
+.nav {
+  padding: 1rem 10rem;
+  width: 100%;
+  background-color: $color-white;
+  // background-color: #eee;
+  // position: fixed;
+  // top: 0;
+  // left: 0;
+  // z-index: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media only screen and (max-width: $mbl-port) {
+    padding: 1rem 5rem;
+  }
+  // @media only screen and (max-width: $mbl-small) {
+  //   font-size: 4.5rem;
+  // }
+
+  .bar {
+    display: none;
+    position: absolute;
+    top: 1.5rem;
+    right: 4rem;
+    cursor: pointer;
+
+    .icon-bar {
+      height: 5rem;
+      width: 5rem;
+    }
+
+    @media only screen and (max-width: $tab-port) {
+      display: block;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // width: 100%;
+    gap: 3rem;
+
+    @media only screen and (max-width: $tab-port) {
+      display: none;
+    }
+
+    @media only screen and (max-width: $mbl-port) {
+      gap: 1.5rem;
+    }
+    @media only screen and (max-width: $mbl-small) {
+      gap: 1rem;
+    }
+  }
+
+  &__link {
+    font-size: 1.6rem;
+    color: $color-text;
+    text-decoration: none;
+  }
+
+  .active,
+  &__link:hover {
+    color: $color-heading;
+  }
+}
+
+.mbl-nav {
+  height: 100%;
+  width: 60%;
+  background-color: $color-primary;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  transform: translateX(100%);
+  transition: all 0.5s;
+
+  &__list {
+    margin-top: 15rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem 0;
+    text-align: center;
+  }
+
+  &__item {
+  }
+
+  &__link {
+    font-size: 3.2rem;
+    color: $color-white;
+    text-decoration: none;
+
+    &:hover {
+      color: $color-white;
+    }
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 2rem;
+    left: 4rem;
+    cursor: pointer;
+
+    .icon-close {
+      height: 5rem;
+      width: 5rem;
+      fill: $color-white;
+    }
+  }
+}
+
+.active-nav {
+  transform: translateX(0);
+}

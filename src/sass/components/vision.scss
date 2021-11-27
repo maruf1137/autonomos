@@ -1,0 +1,46 @@
+.vision-section {
+}
+
+.vision {
+  &__header {
+    margin-bottom: 4rem;
+  }
+
+  &__video {
+    height: 65rem;
+    max-width: 123rem;
+    width: 100%;
+    position: relative;
+
+    @media only screen and (max-width: $mbl-port) {
+      height: 35rem;
+    }
+    @media only screen and (max-width: $mbl-port) {
+      height: 30rem;
+    }
+
+    img {
+      @include img-size;
+    }
+
+    .btn-player {
+      height: 6.5rem;
+      width: 6.5rem;
+      background-color: rgba(255, 255, 255, 0.308);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+    }
+
+    .icon-player {
+      @include img-size;
+      transform: scale(1);
+      fill: $color-white;
+    }
+  }
+}
