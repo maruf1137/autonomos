@@ -44,6 +44,11 @@ body {
     padding: 0 5rem;
   }
 }
+@media only screen and (max-width: 30em) {
+  .container {
+    padding: 0 2.5rem;
+  }
+}
 
 .section {
   margin: 8rem 0;
@@ -1165,14 +1170,14 @@ a:hover {
   height: 62rem;
   width: 62rem;
 }
+@media only screen and (max-width: 75em) {
+  .header__image {
+    display: none;
+  }
+}
 .header__image img {
   height: 100%;
   width: 100%;
-}
-@media only screen and (max-width: 75em) {
-  .header__image img {
-    display: none;
-  }
 }
 
 .service-section {
@@ -1216,7 +1221,8 @@ a:hover {
   margin-bottom: 4rem;
 }
 .vision__video {
-  height: 65rem;
+  max-height: 65rem;
+  height: 55rem;
   max-width: 123rem;
   width: 100%;
   position: relative;
@@ -1231,28 +1237,13 @@ a:hover {
     height: 30rem;
   }
 }
-.vision__video img {
+.vision__video .embed-responsive {
   height: 100%;
   width: 100%;
 }
-.vision__video .btn-player {
-  height: 6.5rem;
-  width: 6.5rem;
-  background-color: rgba(255, 255, 255, 0.308);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-}
-.vision__video .icon-player {
+.vision__video .embed-responsive iframe {
   height: 100%;
   width: 100%;
-  transform: scale(1);
-  fill: #fff;
 }
 
 .team__header {
@@ -1289,8 +1280,8 @@ a:hover {
 .team .sub-heading {
   font-size: 3rem;
   text-align: center;
-  margin-top: 5rem;
-  margin-bottom: 2.5rem;
+  margin-top: 7rem;
+  margin-bottom: 4.5rem;
 }
 .team__member {
   width: 100%;

@@ -55,12 +55,12 @@
     transform: translateY(-50%);
     height: 62rem;
     width: 62rem;
-
-    img {
-      @include img-size;
-      @media only screen and (max-width: $laptop-land) {
+@media only screen and (max-width: $laptop-land) {
         display: none;
       }
+    img {
+      @include img-size;
+      
     }
   }
 }

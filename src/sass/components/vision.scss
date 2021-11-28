@@ -1,5 +1,3 @@
-.vision-section {
-}
 
 .vision {
   &__header {
@@ -7,7 +5,8 @@
   }
 
   &__video {
-    height: 65rem;
+    max-height: 65rem;
+    height: 55rem;
     max-width: 123rem;
     width: 100%;
     position: relative;
@@ -19,28 +18,36 @@
       height: 30rem;
     }
 
-    img {
+    .embed-responsive{
       @include img-size;
+
+      iframe{
+        @include img-size;
+      }
     }
 
-    .btn-player {
-      height: 6.5rem;
-      width: 6.5rem;
-      background-color: rgba(255, 255, 255, 0.308);
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-radius: 50%;
-    }
+    // img {
+    //   @include img-size;
+    // }
 
-    .icon-player {
-      @include img-size;
-      transform: scale(1);
-      fill: $color-white;
-    }
+    // .btn-player {
+    //   height: 6.5rem;
+    //   width: 6.5rem;
+    //   background-color: rgba(255, 255, 255, 0.308);
+    //   position: absolute;
+    //   top: 50%;
+    //   left: 50%;
+    //   transform: translate(-50%, -50%);
+    //   display: flex;
+    //   justify-content: center;
+    //   align-items: center;
+    //   border-radius: 50%;
+    // }
+
+    // .icon-player {
+    //   @include img-size;
+    //   transform: scale(1);
+    //   fill: $color-white;
+    // }
   }
 }

@@ -43,6 +43,9 @@ body {
   @media only screen and (max-width: $tab-land) {
     padding: 0 5rem;
   }
+  @media only screen and (max-width: $mbl-port) {
+    padding: 0 2.5rem;
+  }
 }
 
 .section {
