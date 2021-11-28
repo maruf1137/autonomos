@@ -1,87 +1,63 @@
-.industry-section {
-  .header {
-  }
-}
+// .industry-section {
+//   .header {
+//   }
+// }
 
 .industry {
   background: #f3f3f3;
   padding: 10rem 0 7rem 0;
   position: relative;
 
-  &::before{
-    background-image: linear-gradient(to right, rgba(243, 243, 243, 1), rgba(243, 243, 243, 0.2)); 
-    content: "";
-    display: block;
-    height: 100%;
-    width: 40%;
-    position: absolute;
-    top: 0rem;
-    left: 0rem;
-    z-index: 2;
-  }
 
-  &::after{
-    background-image: linear-gradient(to left, rgba(243, 243, 243, 1), rgba(243, 243, 243, 0.2)); 
-    content: "";
-    display: block;
-    height: 100%;
-    width: 40%;
-    position: absolute;
-    top: 0rem;
-    right: 0rem;
-    z-index: 2;
-  }
 
   .owl-carousel .owl-stage-outer {
     overflow: visible;
-  }
 
-  .owl-carousel.owl-drag .owl-item {
-    // width: 250px;
+    &::before{
+      background-image: linear-gradient(to right, rgba(243, 243, 243, 1), rgba(243, 243, 243, 0.2)); 
+      left: 0;
+      @include sliderOverlay;
+    }
+  
+    &::after{
+      background-image: linear-gradient(to left, rgba(243, 243, 243, 1), rgba(243, 243, 243, 0.2)); 
+      right: 0;
+      @include sliderOverlay;
+    }
   }
 
   .owl-carousel {
     .owl-nav{
-
-      .owl-next.owl-prev{
-        background-color: #fff;
-        color: $color-primary;
-      }
+      // position: relative;
+      // z-index: 3;
       
       .owl-prev{
         left: 20rem;
-        position: absolute;
-        top: 40%;
-        transform: translateY(-50%);
-        background-color: #fff;
-        color: $color-primary;
-        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-        width: 5rem;
-        height: 5rem;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 2.5rem;
-        z-index: 3;
+        @include owl-btn;
+
+        @media only screen and (max-width: $tab-land){
+          left: 15rem;
+        }
+        @media only screen and (max-width: $mbl-land){
+          left: 3rem;
+        }
+        @media only screen and (max-width: $mbl-small){
+          left: 0;
+        }
       }
 
       .owl-next{
         right: 20rem;
-        position: absolute;
-        top: 40%;
-        transform: translateY(-50%);
-        background-color: #fff;
-        color: $color-primary;
-        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-        width: 5rem;
-        height: 5rem;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: 3;
-        font-size: 2.5rem;
+        @include owl-btn;
+        @media only screen and (max-width: $tab-land){
+          right: 15rem;
+        }
+        @media only screen and (max-width: $mbl-land){
+          right: 3rem;
+        }
+        @media only screen and (max-width: $mbl-small){
+          right: 0;
+        }
       }
     }
   }
@@ -91,17 +67,20 @@
   }
 
   .item {
-    // border: 1px solid red;
     text-align: center;
+    position: relative;
+    z-index: 3;
 
     img {
       height: 15rem;
-      width: auto;
+      max-width: 100%;
+      // width: auto;
       margin: 0 auto;
       object-fit: contain;
       margin-bottom: 4rem;
       opacity: 0.5;
       transition: all .5s;
+      overflow: hidden;
     }
 
     h2{
@@ -110,10 +89,22 @@
       font-style: italic;
       display: none;
       transition: all .5s;
+
+      @media only screen and (max-width: $tab-land){
+        font-size: 2.8rem;
+      }
+      @media only screen and (max-width: $mbl-land){
+        font-size: 2.4rem;
+      }
+      @media only screen and (max-width: $mbl-small){
+        font-size: 2rem;
+      }
     }
   }
 
+
   .owl-item.active.center{
+    z-index: 3;
     img{
       opacity: 1;
       transform: scale(1.5);
@@ -121,10 +112,21 @@
     h2{
       display: block;
       position: absolute;
-      bottom: -12rem;
-      left: -31rem;
+      bottom: -150%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       width: 80rem;
-      z-index: 3;
+      z-index: 4;
+
+      @media only screen and (max-width: $tab-port){
+        width: 60rem;
+      }
+      @media only screen and (max-width: $mbl-land){
+        width: 50rem;
+      }
+      @media only screen and (max-width: $mbl-small){
+        width: 30rem;
+      }
     }
   }
 }

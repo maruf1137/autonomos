@@ -4,20 +4,26 @@ footer {
 }
 
 .footer {
+  
   &__cols {
     padding-bottom: 5rem;
+
+    @media only screen and (max-width: $tab-port){
+      padding: 0 2rem 5rem 2rem;
+    }
   }
 
   &__col {
-    // padding-right: 5rem;
   }
   .col--1 {
     text-align: center;
+
+    @media only screen and (max-width: $tab-port){
+      text-align: start;
+    }
   }
 
   &__logo {
-    // display: block;
-    // text-align: center;
 
     img {
       height: 6rem;

@@ -6,13 +6,13 @@ $(".owl-carousel").owlCarousel({
   navText: ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
   responsive: {
     0: {
-      items: 3,
+      items: 1,
     },
     400: {
       items: 3,
     },
     600: {
-      items: 3,
+      items: 5,
     },
     1000: {
       items: 7,
@@ -20,14 +20,25 @@ $(".owl-carousel").owlCarousel({
   },
 });
 
-const openBtn = document.querySelector(".open-btn");
+window.addEventListener("scroll", ()=>{
+  const nav = document.querySelector(".nav")
+  nav.classList.toggle("sticky", window.scrollY > 10)
+})
+
+const openBtn = document.querySelector(".bar");
 const closeBtn = document.querySelector(".close-btn");
 
-openBtn.addEventListener("click", () => {
+const openNav = ()=>{
   const mblNab = document.querySelector(".mbl-nav");
   mblNab.classList.add("active-nav");
-});
-closeBtn.addEventListener("click", () => {
+}
+
+const closeNav = ()=>{
   const mblNab = document.querySelector(".mbl-nav");
   mblNab.classList.remove("active-nav");
-});
+}
+
+openBtn.addEventListener("click", openNav);
+closeBtn.addEventListener("click", closeNav);
+
+

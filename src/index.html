@@ -1,322 +1,325 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Autonomos Systems</title>
 
-    <!-- ================ FONTS ================= -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,400;0,600;0,700;1,500&family=Poppins:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Autonomos Systems</title>
 
-    <script src="https://kit.fontawesome.com/df45955d7c.js" crossorigin="anonymous"></script>
+  <!-- ================ FONTS ================= -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,400;0,600;0,700;1,500&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
 
-    <!-- ================ carousel ================= -->
-    <link rel="stylesheet" href="css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+  <script src="https://kit.fontawesome.com/df45955d7c.js" crossorigin="anonymous"></script>
 
-    <!-- ================ CSS FILES ================= -->
-    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css" />
-    <link rel="stylesheet" href="fonts/stylesheet.css" />
-    <link rel="stylesheet" href="./css/bootstrap.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
-  <!-- #icon-bars -->
-  <body>
+  <!-- ================ carousel ================= -->
+  <link rel="stylesheet" href="css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="css/owl.theme.default.min.css" />
 
-    <div class="mbl-nav">
-      <div class="close-btn">
-        <svg class="icon-close">
-          <use xlink:href="img/icons.svg#icon-close"></use>
-        </svg>
-      </div>
-      <ul class="mbl-nav__list">
-        <li class="mbl-nav__item">
-          <a href="#" class="mbl-nav__link">Technology</a>
-        </li>
-        <li class="mbl-nav__item">
-          <a href="#" class="mbl-nav__link">Partners / funders</a>
-        </li>
-        <li class="mbl-nav__item">
-          <a href="#" class="mbl-nav__link">Vision</a>
-        </li>
-        <li class="mbl-nav__item">
-          <a href="#" class="mbl-nav__link">Team</a>
-        </li>
-      </ul>
+  <!-- ================ CSS FILES ================= -->
+  <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css" />
+  <link rel="stylesheet" href="fonts/stylesheet.css" />
+  <link rel="stylesheet" href="./css/bootstrap.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<!-- #icon-bars -->
+
+<body>
+
+  <div class="mbl-nav">
+    <div class="close-btn">
+      <svg class="icon-close">
+        <use xlink:href="img/icons.svg#icon-close"></use>
+      </svg>
     </div>
-    <nav class="nav">
-      <div class="bar open-btn">
-        <svg class="icon-bar">
-          <use xlink:href="img/icons.svg#icon-bars"></use>
-        </svg>
+    <ul class="mbl-nav__list">
+      <li class="mbl-nav__item">
+        <a onclick="closeNav()" href="#technology" class="mbl-nav__link">Technology</a>
+      </li>
+      <li class="mbl-nav__item">
+        <a onclick="closeNav()" href="#industry" class="mbl-nav__link">Partners / funders</a>
+      </li>
+      <li class="mbl-nav__item">
+        <a onclick="closeNav()" href="#vision" class="mbl-nav__link">Vision</a>
+      </li>
+      <li class="mbl-nav__item">
+        <a onclick="closeNav()" href="#team" class="mbl-nav__link">Team</a>
+      </li>
+    </ul>
+  </div>
+  <nav class="nav">
+    <div class="bar open-btn">
+      <svg class="icon-bar">
+        <use xlink:href="img/icons.svg#icon-menu"></use>
+      </svg>
+    </div>
+    <figure class="nav__logo-area">
+      <a href="#home"><img src="img/logo-hero.png" alt="logo" /></a>
+    </figure>
+    <ul class="nav__list">
+      <li class="nav__item">
+        <a href="#technology" class="nav__link">Technology</a>
+      </li>
+      <li class="nav__item">
+        <a href="#industry" class="nav__link">Partners / funders</a>
+      </li>
+      <li class="nav__item">
+        <a href="#vision" class="nav__link">Vision</a>
+      </li>
+      <li class="nav__item">
+        <a href="#team" class="nav__link">Team</a>
+      </li>
+    </ul>
+  </nav>
+
+  <header class="header" id="home">
+    <div class="container">
+      <div class="header__content">
+        <h1 class="heading">The future of autonomus flight</h1>
+        <p class="p-txt">
+          3UG Autonomous Systems is creating autonomous flight for the next
+          generation of air mobility. Through intelligent flight guidance
+          operations become safer, profitable and scalable.
+        </p>
+        <button class="btn">
+          learn more
+          <span>
+            <svg class="icon-shere">
+              <use xlink:href="img/icons.svg#icon-shere"></use>
+            </svg>
+          </span>
+        </button>
       </div>
-      <figure class="nav__logo-area">
-        <img src="img/logo-hero.png" alt="logo" />
+      <figure class="header__image">
+        <img src="img/Air-Taxi.png" alt="air" />
       </figure>
-      <ul class="nav__list">
-        <li class="nav__item">
-          <a href="#" class="nav__link">Technology</a>
-        </li>
-        <li class="nav__item">
-          <a href="#" class="nav__link">Partners / funders</a>
-        </li>
-        <li class="nav__item">
-          <a href="#" class="nav__link">Vision</a>
-        </li>
-        <li class="nav__item">
-          <a href="#" class="nav__link">Team</a>
-        </li>
-      </ul>
-    </nav>
+    </div>
+  </header>
 
-    <header class="header">
-      <div class="container">
-        <div class="header__content">
-          <h1 class="heading">The future of autonomus flight</h1>
-          <p class="p-txt">
-            3UG Autonomous Systems is creating autonomous flight for the next
-            generation of air mobility. Through intelligent flight guidance
-            operations become safer, profitable and scalable.
-          </p>
-          <button class="btn">
-            learn more
-            <span>
-              <svg class="icon-shere">
-                <use xlink:href="img/icons.svg#icon-shere"></use>
-              </svg>
-            </span>
-          </button>
+
+  <div id="technology"></div>
+  <section class="service-section">
+    <div class="container">
+      <div class="service">
+        <div class="service__header center">
+          <h2 class="heading">
+            Our technology is intelligent, agile and scaleable
+          </h2>
         </div>
-        <figure class="header__image">
-          <img src="img/Air-Taxi.png" alt="air" />
-        </figure>
-      </div>
-    </header>
-
-    <section class="service-section">
-      <div class="container">
-        <div class="service">
-          <div class="service__header center">
-            <h2 class="heading">
-              Our technology is intelligent, agile and scaleable
-            </h2>
+        <div class="service__items">
+          <div class="service__item">
+            <figure class="service__img">
+              <img src="img/service-img-1.png" alt="service icon" />
+            </figure>
+            <h4 class="heading">Via Flight Planning</h4>
+            <p class="p-text">
+              safer flight through risk aware flight planning, reduce risk
+              exposure 40 - 95% before taking off
+            </p>
           </div>
-          <div class="service__items">
-            <div class="service__item">
-              <figure class="service__img">
-                <img src="img/service-img-1.png" alt="service icon" />
-              </figure>
-              <h4 class="heading">Via Flight Planning</h4>
-              <p class="p-text">
-                safer flight through risk aware flight planning, reduce risk
-                exposure 40 - 95% before taking off
-              </p>
-            </div>
-            <div class="service__item">
-              <figure class="service__img">
-                <img src="img/service-img-2.png" alt="service icon" />
-              </figure>
-              <h4 class="heading">Via Flight Planning</h4>
-              <p class="p-text">
-                safer flight through risk aware flight planning, reduce risk
-                exposure 40 - 95% before taking off
-              </p>
-            </div>
-            <div class="service__item">
-              <figure class="service__img">
-                <img src="img/service-img-3.png" alt="service icon" />
-              </figure>
-              <h4 class="heading">Via Flight Planning</h4>
-              <p class="p-text">
-                safer flight through risk aware flight planning, reduce risk
-                exposure 40 - 95% before taking off
-              </p>
-            </div>
+          <div class="service__item">
+            <figure class="service__img">
+              <img src="img/service-img-2.png" alt="service icon" />
+            </figure>
+            <h4 class="heading">Via Flight Planning</h4>
+            <p class="p-text">
+              safer flight through risk aware flight planning, reduce risk
+              exposure 40 - 95% before taking off
+            </p>
+          </div>
+          <div class="service__item">
+            <figure class="service__img">
+              <img src="img/service-img-3.png" alt="service icon" />
+            </figure>
+            <h4 class="heading">Via Flight Planning</h4>
+            <p class="p-text">
+              safer flight through risk aware flight planning, reduce risk
+              exposure 40 - 95% before taking off
+            </p>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="section vision-section">
-      <div class="container">
-        <div class="vision">
-          <div class="vision__header center">
-            <h2 class="heading">our vision for the future</h2>
-          </div>
-          <div class="vision__video">
-            <!-- <video controls>
+  <div id="vision"></div>
+  <section class="section vision-section">
+    <div class="container">
+      <div class="vision">
+        <div class="vision__header center">
+          <h2 class="heading">our vision for the future</h2>
+        </div>
+        <div class="vision__video">
+          <!-- <video controls>
               <source src="img/dummy-video.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video> -->
-            <img src="img/video-image.jpg" alt="video" />
-            <button class="btn btn-player">
-              <svg class="icon-player">
-                <use xlink:href="img/icons.svg#icon-player"></use>
-              </svg>
-            </button>
-          </div>
+          <img src="img/video-image.jpg" alt="video" />
+          <button class="btn btn-player">
+            <svg class="icon-player">
+              <use xlink:href="img/icons.svg#icon-player"></use>
+            </svg>
+          </button>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="section industry-section">
-        <div class="heading center mb-2">
-          <h2 class="heading">Trusted by industry</h2>
+  <div id="industry" class="pb-3"></div>
+  <section class="section industry-section">
+    <div class="heading center mb-2">
+      <h2 class="heading">Trusted by industry</h2>
+    </div>
+    <div class="industry">
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <img src="img/industry-img-1.png" alt="">
+          <h2 class="heading">UK Department for Transport funded us to build smart drones
+          </h2>
         </div>
-        <div class="industry">
-          <div class="owl-carousel owl-theme">
-            <div class="item">
-              <img src="img/industry-img-1.png" alt="">
-              <h2 class="heading">UK Department for Transport funded us to build smart drones
-              </h2>
-            </div>
-            <div class="item">
-              <img src="img/industry-img-2.png" alt="">
-              <h2>UK Department for Transport funded us to build smart drones
-</h2>
-            </div>
-            <div class="item">
-              <img src="img/industry-img-3.png" alt="">
-              <h2>UK Department for Transport funded us to build smart drones
-</h2>
-            </div>
-            <div class="item">
-              <img src="img/industry-img-4.png" alt="">
-              <h2>UK Department for Transport funded us to build smart drones
-</h2>
-            </div>
-            <div class="item">
-              <img src="img/industry-img-5.png" alt="">
-              <h2>UK Department for Transport funded us to build smart drones
-</h2>
-            </div>
-            <div class="item">
-              <img src="img/industry-img-6.png" alt="">
-              <h2>UK Department for Transport funded us to build smart drones
-</h2>
-            </div>
-            <div class="item">
-              <img src="img/industry-img-7.png" alt="">
-              <h2>UK Department for Transport funded us to build smart drones
-</h2>
-            </div>
-            <div class="item">
-              <img src="img/industry-img-8.png" alt="">
-              <h2>UK Department for Transport funded us to build smart drones
-</h2>
-            </div>
-            
+        <div class="item">
+          <img src="img/industry-img-2.png" alt="">
+          <h2>UK Department for Transport funded us to build smart drones
+          </h2>
         </div>
+        <div class="item">
+          <img src="img/industry-img-3.png" alt="">
+          <h2>UK Department for Transport funded us to build smart drones
+          </h2>
         </div>
-    </section>
+        <div class="item">
+          <img src="img/industry-img-4.png" alt="">
+          <h2>UK Department for Transport funded us to build smart drones
+          </h2>
+        </div>
+        <div class="item">
+          <img src="img/industry-img-5.png" alt="">
+          <h2>UK Department for Transport funded us to build smart drones
+          </h2>
+        </div>
+        <div class="item">
+          <img src="img/industry-img-6.png" alt="">
+          <h2>UK Department for Transport funded us to build smart drones
+          </h2>
+        </div>
+        <div class="item">
+          <img src="img/industry-img-7.png" alt="">
+          <h2>UK Department for Transport funded us to build smart drones
+          </h2>
+        </div>
+        <div class="item">
+          <img src="img/industry-img-8.png" alt="">
+          <h2>UK Department for Transport funded us to build smart drones
+          </h2>
+        </div>
 
-    <section class="section team-section">
-      <div class="container">
-        <div class="team">
-          <div class="team__header center">
-            <h2 class="heading">team</h2>
-          </div>
-          <!-- team 1 -->
-          <div class="team__members team--1 mb-5">
-            <div class="team__member">
-              <figure class="team__img">
-                <img src="img/team-image-1.png" alt="Henri French" />
-              </figure>
-              <h5 class="heading">Henri French</h5>
-              <p class="p-text">Embedded Software</p>
-            </div>
-            <div class="team__member">
-              <figure class="team__img">
-                <img src="img/team-image-2.png" alt="Henri French" />
-              </figure>
-              <h5 class="heading">Oscar Miles</h5>
-              <p class="p-text">Data Analyst</p>
-            </div>
-            <div class="team__member">
-              <figure class="team__img">
-                <img src="img/team-image-3.png" alt="Freddie Sherratt" />
-              </figure>
-              <h5 class="heading">Freddie Sherratt</h5>
-              <p class="p-text">Hardware Engineer</p>
-            </div>
-            <div class="team__member">
-              <figure class="team__img">
-                <img src="img/team-image-4.png" alt="Sean Cleator" />
-              </figure>
-              <h5 class="heading">Sean Cleator</h5>
-              <p class="p-text">Autonomy Perception</p>
-            </div>
-          </div>
+      </div>
+    </div>
+  </section>
 
-          <div class="team__members team--2">
-            <div class="team__member">
-              <figure class="team__img">
-                <img src="img/team-image-5.png" alt="Samie Baig" />
-              </figure>
-              <h5 class="heading">Samie Baig</h5>
-              <p class="p-text">Simulation Environment</p>
-            </div>
-            <div class="team__member">
-              <figure class="team__img">
-                <img src="img/team-image-6.png" alt="Helio Silva" />
-              </figure>
-              <h5 class="heading">Helio Silva</h5>
-              <p class="p-text">Avionics Integration</p>
-            </div>
-            <div class="team__member">
-              <figure class="team__img">
-                <img src="img/team-image-7.png" alt="Si Parker" />
-              </figure>
-              <h5 class="heading">Si Parker</h5>
-              <p class="p-text">Server Architecture</p>
-            </div>
+  <div id="team" class="pb-3"></div>
+  <section class="section team-section">
+    <div class="container">
+      <div class="team">
+        <div class="team__header center">
+          <h2 class="heading">team</h2>
+        </div>
+        <!-- team 1 -->
+        <div class="team__members team--1 mb-5">
+          <div class="team__member">
+            <figure class="team__img">
+              <img src="img/team-image-1.png" alt="Henri French" />
+            </figure>
+            <h5 class="heading">Henri French</h5>
+            <p class="p-text">Embedded Software</p>
           </div>
-
-          <h2 class="heading sub-heading">Co-Founders</h2>
-          <div class="team__members team--1">
-            <div class="team__member">
-              <figure class="team__img">
-                <img src="img/co-founder-1.png" alt="Dr David Cleaver" />
-              </figure>
-              <h5 class="heading">Dr David Cleaver CEO & Co-Founder</h5>
-              <p class="p-text">Ex-Associate Prof. in Aerospace Engineering</p>
-            </div>
-            <div class="team__member">
-              <figure class="team__img">
-                <img src="img/co-founder-2.png" alt="Dr Jonathan du Bios" />
-              </figure>
-              <h5 class="heading">Dr Jonathan du Bios CTA & Co-Founder</h5>
-              <p class="p-text">
-                Ex-Associate Prof. in Flight Dynamics and Control
-              </p>
-            </div>
-            <div class="team__member">
-              <figure class="team__img">
-                <img
-                  src="img/co-founder-3.png"
-                  alt="Dr Pejman Iravani
-                COO & Co-Founder"
-                />
-              </figure>
-              <h5 class="heading">Dr Pejman Iravani COO & Co-Founder</h5>
-              <p class="p-text">Ex-Associate Prof. in Robotics & Autonomy</p>
-            </div>
-            <div class="team__member">
-              <figure class="team__img">
-                <img src="img/co-founder-4.png" alt="Capt.Anthony Lawrenson" />
-              </figure>
-              <h5 class="heading">
-                Capt.Anthony Lawrenson PhD DBD & Co-Founder
-              </h5>
-              <p class="p-text">Experienced Military & Commercial Pilot</p>
-            </div>
+          <div class="team__member">
+            <figure class="team__img">
+              <img src="img/team-image-2.png" alt="Henri French" />
+            </figure>
+            <h5 class="heading">Oscar Miles</h5>
+            <p class="p-text">Data Analyst</p>
           </div>
+          <div class="team__member">
+            <figure class="team__img">
+              <img src="img/team-image-3.png" alt="Freddie Sherratt" />
+            </figure>
+            <h5 class="heading">Freddie Sherratt</h5>
+            <p class="p-text">Hardware Engineer</p>
+          </div>
+          <div class="team__member">
+            <figure class="team__img">
+              <img src="img/team-image-4.png" alt="Sean Cleator" />
+            </figure>
+            <h5 class="heading">Sean Cleator</h5>
+            <p class="p-text">Autonomy Perception</p>
+          </div>
+        </div>
 
-          <div class="advisory-member">
-            <h2 class="heading sub-heading">Advisory board</h2>
+        <div class="team__members team--2">
+          <div class="team__member">
+            <figure class="team__img">
+              <img src="img/team-image-5.png" alt="Samie Baig" />
+            </figure>
+            <h5 class="heading">Samie Baig</h5>
+            <p class="p-text">Simulation Environment</p>
+          </div>
+          <div class="team__member">
+            <figure class="team__img">
+              <img src="img/team-image-6.png" alt="Helio Silva" />
+            </figure>
+            <h5 class="heading">Helio Silva</h5>
+            <p class="p-text">Avionics Integration</p>
+          </div>
+          <div class="team__member">
+            <figure class="team__img">
+              <img src="img/team-image-7.png" alt="Si Parker" />
+            </figure>
+            <h5 class="heading">Si Parker</h5>
+            <p class="p-text">Server Architecture</p>
+          </div>
+        </div>
+
+        <h2 class="heading sub-heading">Co-Founders</h2>
+        <div class="team__members team--1">
+          <div class="team__member">
+            <figure class="team__img">
+              <img src="img/co-founder-1.png" alt="Dr David Cleaver" />
+            </figure>
+            <h5 class="heading">Dr David Cleaver CEO & Co-Founder</h5>
+            <p class="p-text">Ex-Associate Prof. in Aerospace Engineering</p>
+          </div>
+          <div class="team__member">
+            <figure class="team__img">
+              <img src="img/co-founder-2.png" alt="Dr Jonathan du Bios" />
+            </figure>
+            <h5 class="heading">Dr Jonathan du Bios CTA & Co-Founder</h5>
+            <p class="p-text">
+              Ex-Associate Prof. in Flight Dynamics and Control
+            </p>
+          </div>
+          <div class="team__member">
+            <figure class="team__img">
+              <img src="img/co-founder-3.png" alt="Dr Pejman Iravani
+                COO & Co-Founder" />
+            </figure>
+            <h5 class="heading">Dr Pejman Iravani COO & Co-Founder</h5>
+            <p class="p-text">Ex-Associate Prof. in Robotics & Autonomy</p>
+          </div>
+          <div class="team__member">
+            <figure class="team__img">
+              <img src="img/co-founder-4.png" alt="Capt.Anthony Lawrenson" />
+            </figure>
+            <h5 class="heading">
+              Capt.Anthony Lawrenson PhD DBD & Co-Founder
+            </h5>
+            <p class="p-text">Experienced Military & Commercial Pilot</p>
+          </div>
+        </div>
+
+        <div class="advisory-member">
+          <h2 class="heading sub-heading">Advisory board</h2>
           <div class="team__members">
             <div class="team__member">
               <figure class="team__img">
@@ -334,50 +337,48 @@
               <p class="p-text">Senior Executive in Operations and Regulations within Aviation and Defence.</p>
             </div>
           </div>
-          </div>
-          
         </div>
+
       </div>
-    </section>
+    </div>
+  </section>
 
-    <footer>
-      <div class="container">
-        <div class="footer">
-          <div class="footer__cols row gx-5">
-            <div class="footer__col col--1 col-12 col-sm-6 col-md-5 mb-5">
-              <div class="footer__logo mb-2">
-                <a href="#"
-                  ><img src="img/footer-logo.png" alt="footer logo"
-                /></a>
-              </div>
+  <footer>
+    <div class="container">
+      <div class="footer">
+        <div class="footer__cols row gx-5">
+          <div class="footer__col col--1 col-12 col-sm-6 col-md-5 mb-5">
+            <div class="footer__logo mb-2">
+              <a href="#"><img src="img/footer-logo.png" alt="footer logo" /></a>
+            </div>
 
-              <a href="#" class="footer__mail capitalize">INFO@3UG.IO</a>
-            </div>
-            <div class="footer__col col--2 col-12 col-sm-6 col-md-3 mb-5">
-              <ul class="footer__list">
-                <li>
-                  <a href="#" class="footer__link">about us</a>
-                </li>
-                <li>
-                  <a href="#" class="footer__link">privecy policy</a>
-                </li>
-                <li>
-                  <a href="#" class="footer__link">terms of use</a>
-                </li>
-              </ul>
-            </div>
-            <div class="footer__col col--3 col-12 col-sm-6 col-md-2 mb-5">
-              <ul class="footer__list">
-                <li>
-                  <a href="#" class="footer__link">Technology</a>
-                </li>
-                <li>
-                  <a href="#" class="footer__link">Partners / funders</a>
-                </li>
-              </ul>
-            </div>
-            <div class="footer__col col--4 col-12 col-sm-6 col-md-2">
-              <h6 class="follow">follow us-</h5>
+            <a href="#" class="footer__mail capitalize">INFO@3UG.IO</a>
+          </div>
+          <div class="footer__col col--2 col-12 col-sm-6 col-md-3 mb-5">
+            <ul class="footer__list">
+              <li>
+                <a href="#" class="footer__link">about us</a>
+              </li>
+              <li>
+                <a href="#" class="footer__link">privecy policy</a>
+              </li>
+              <li>
+                <a href="#" class="footer__link">terms of use</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__col col--3 col-12 col-sm-6 col-md-2 mb-5">
+            <ul class="footer__list">
+              <li>
+                <a href="#" class="footer__link">Technology</a>
+              </li>
+              <li>
+                <a href="#" class="footer__link">Partners / funders</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__col col--4 col-12 col-sm-6 col-md-2">
+            <h6 class="follow">follow us-</h5>
               <ul class="footer__list list">
                 <li>
                   <a href="#" class="footer__link link">
@@ -393,27 +394,25 @@
                   </svg></a>
                 </li> -->
               </ul>
-            </div>
-          </div>
-
-          <div class="footer__bottom">
-            <ul class="list row">
-              <li class="item col-12 col-sm-6 col-md-4 mb-1">16-19 Old Bond Street, Bath, BA1 1BP </li>
-              <li class="item col-12 col-sm-6 col-md-4 mb-1">Company Number: 11470702</li>
-              <li class="item col-12 col-sm-6 col-md-4">VAT Number: GB 365 0349 01</li>
-            </ul>
           </div>
         </div>
-      </div>
-    </footer>
 
-    <!-- Main js file -->
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
-      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
-      crossorigin="anonymous"
-    ></script>
-    <script src="./js/owl.carousel.min.js"></script>
-    <script src="./js/main.js"></script>
-  </body>
+        <div class="footer__bottom">
+          <ul class="list row">
+            <li class="item col-12 col-sm-6 col-md-4 mb-1">16-19 Old Bond Street, Bath, BA1 1BP </li>
+            <li class="item col-12 col-sm-6 col-md-4 mb-1">Company Number: 11470702</li>
+            <li class="item col-12 col-sm-6 col-md-4">VAT Number: GB 365 0349 01</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main js file -->
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+    integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+  <script src="./js/owl.carousel.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
 </html>

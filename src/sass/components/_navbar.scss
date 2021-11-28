@@ -2,21 +2,14 @@
   padding: 1rem 10rem;
   width: 100%;
   background-color: $color-white;
-  // background-color: #eee;
-  // position: fixed;
-  // top: 0;
-  // left: 0;
-  // z-index: 500;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: all .5s;
 
   @media only screen and (max-width: $mbl-port) {
     padding: 1rem 5rem;
   }
-  // @media only screen and (max-width: $mbl-small) {
-  //   font-size: 4.5rem;
-  // }
 
   .bar {
     display: none;
@@ -28,6 +21,7 @@
     .icon-bar {
       height: 5rem;
       width: 5rem;
+      fill: $color-text;
     }
 
     @media only screen and (max-width: $tab-port) {
@@ -66,6 +60,16 @@
   }
 }
 
+.sticky{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: $color-white;
+  z-index: 5;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.096);
+}
+
 .mbl-nav {
   height: 100%;
   width: 60%;
@@ -73,11 +77,18 @@
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 5;
+  z-index: 6;
   display: flex;
   justify-content: center;
   transform: translateX(100%);
   transition: all 0.5s;
+
+  @media only screen and (max-width: $mbl-port) {
+    width: 80%;
+  }
+  @media only screen and (max-width: $mbl-small) {
+    width: 100%;
+  }
 
   &__list {
     margin-top: 15rem;
@@ -85,9 +96,6 @@
     flex-direction: column;
     gap: 2rem 0;
     text-align: center;
-  }
-
-  &__item {
   }
 
   &__link {
@@ -107,8 +115,8 @@
     cursor: pointer;
 
     .icon-close {
-      height: 5rem;
-      width: 5rem;
+      height: 3.5rem;
+      width: 3.5rem;
       fill: $color-white;
     }
   }

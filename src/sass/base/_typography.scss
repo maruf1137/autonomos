@@ -22,6 +22,13 @@ h2.heading {
   font-weight: 400;
   font-family: $font-secondary;
   color: $color-heading;
+
+  @media only screen and (max-width: $tab-port) {
+    font-size: 4rem;
+  }
+  @media only screen and (max-width: $mbl-port) {
+    font-size: 3.5rem;
+  }
 }
 
 h5.heading {
@@ -76,33 +83,35 @@ h6.heading {
   width: 100%;
 }
 
-@mixin icon-vector {
-  height: 2rem;
-  width: 2rem;
-}
-
-@mixin overlay-content {
-  background-color: $color-black;
-  max-width: 55rem;
-  z-index: 501;
-  border-radius: 1rem;
-
-  &::-webkit-scrollbar {
-    display: none;
-  }
-
-  @media only screen and (max-width: $tab-port) {
-    width: 80%;
-  }
-}
-
-@mixin button-outline {
-  height: 115%;
-  width: 115%;
-  content: "";
-  display: block;
-  background-color: transparent;
-  border-radius: 50%;
+@mixin owl-btn {
   position: absolute;
-  @include pos-center;
+      top: 40%;
+      transform: translateY(-50%);
+      background-color: #fff;
+      color: $color-primary;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      width: 5rem;
+      height: 5rem;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2.5rem;
+      z-index: 4;
+}
+
+@mixin sliderOverlay {
+  content: "";
+    height: 25rem;
+    width: 32%;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+
+    @media only screen and (max-width: $mbl-land){
+      width: 22%;
+    }
+    @media only screen and (max-width: $mbl-land){
+      width: 16%;
+    }
 }
